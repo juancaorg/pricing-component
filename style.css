@@ -51,6 +51,14 @@ body {
   margin: auto;
 }
 
+.main__title {
+  color: var(--clr-grayish-blue);
+  font-size: 2rem;
+  line-height: 2.4375rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
 .footer {
   margin-bottom: 1rem;
   font-weight: 400;
