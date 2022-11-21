@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/*
+ * Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* 
+ * Input styling doesn't work
+ * in Safari iOS by default, this should fix it.
+ * Credit: https://stackoverflow.com/questions/1681826/css-safari-on-mac-doesnt-adhere-to-my-submit-button-style#17701452
+ * This question was asked 13 years ago and Apple 🍎
+ * hasn't fixed this yet, bruh 💀.
+*/
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+:root {
+  --clr-linear-gradient: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  --clr-very-light-grayish-blue: hsl(240, 78%, 98%);
+  --clr-light-grayish-blue: hsl(234, 14%, 74%);
+  --clr-grayish-blue: hsl(233, 13%, 49%);
+  --clr-dark-grayish-blue: hsl(232, 13%, 33%);
+  --clr-dark-purple: hsl(237, 63%, 64%);
+  --clr-brandeis-blue: hsl(212, 95%, 48%);
+  --ff-primary: "Montserrat", monospace;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--clr-very-light-grayish-blue);
+  font-family: var(--ff-primary);
+  font-weight: 700;
+  color: var(--clr-dark-grayish-blue);
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  margin: auto;
+}
+
+.footer {
+  margin-bottom: 1rem;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: var(--clr-dark-grayish-blue);
+  text-align: center;
+}
+
+.footer a {
+  color: var(--clr-dark-purple);
+}
+
+.footer a:hover {
+  color: var(--clr-brandeis-blue);
+}
