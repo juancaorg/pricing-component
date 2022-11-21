@@ -1,52 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta charset="UTF-8" />
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Hack to import a favicon from another, already live website -->
+  <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=juanca.org" />
+  <link rel="stylesheet" href="./style.css" />
+  <!-- The 'defer' boolean attribute is set to indicate to the browser that the script is meant to be executed after the document has been parsed -->
+  <script defer src="./script.js"></script>
+  <title>Pricing component with toggle | juanca.dev</title>
 </head>
+
 <body>
+  <main class="main">
+    <h1 class="main__title">Our Pricing</h1>
+    <div class="main__toggle">
+      Annually
+      <input class="main__toggle--input" name="" type="checkbox" id="myToggle">
+      <div class="main__toggle--fill"></div>
+      Monthly
+    </div>
+    <section class="main__card">
+      <h2 class="main__card--title">Basic</h2>
+      <p class="main__card--price">&dollar;199.99</p>
+      <p class="main__card--info">500 GB Storage</p>
+      <p class="main__card--info">2 Users Allowed</p>
+      <p class="main__card--info">Send up to 3 GB</p>
+      <button class="main__card--more">Learn More</button>
+    </section>
+    <section class="main__card main__card--recommended">
+      <h2 class="main__card--title">Professional</h2>
+      <p class="main__card--price">&dollar;249.99</p>
+      <p class="main__card--info">1 TB Storage</p>
+      <p class="main__card--info">5 Users Allowed</p>
+      <p class="main__card--info">Send up to 10 GB</p>
+      <button class="main__card--more">Learn More</button>
+    </section>
+    <section class="main__card">
+      <h2 class="main__card--title">Master</h2>
+      <p class="main__card--price">&dollar;399.99</p>
+      <p class="main__card--info">2 TB Storage</p>
+      <p class="main__card--info">10 Users Allowed</p>
+      <p class="main__card--info">Send up to 20 GB</p>
+      <button class="main__card--more">Learn More</button>
+    </section>
+  </main>
 
-  Our Pricing
-  Annually
-  Monthly
-
-  Basic
-  &dollar;19.99
-  &dollar;199.99
-  500 GB Storage
-  2 Users Allowed
-  Send up to 3 GB
-  Learn More
-
-  Professional
-  &dollar;24.99
-  &dollar;249.99
-  1 TB Storage
-  5 Users Allowed
-  Send up to 10 GB
-  Learn More
-
-  Master
-  &dollar;39.99
-  &dollar;399.99
-  2 TB Storage
-  10 Users Allowed
-  Send up to 20 GB
-  Learn More
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer class="footer">
+    Challenge by
+    <a href="https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX" rel="noopener"
+      target="_blank">Frontend Mentor</a>. Coded by
+    <a href="https://www.juanca.org" rel="noopener" target="_blank">@juancaorg</a>.
+  </footer>
 </body>
+
 </html>
