@@ -27,7 +27,7 @@ input {
 }
 
 :root {
-  --clr-linear-gradient: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  --clr-linear-gradient: linear-gradient(135deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   --clr-very-light-grayish-blue: hsl(240, 78%, 98%);
   --clr-light-grayish-blue: hsl(234, 14%, 74%);
   --clr-grayish-blue: hsl(233, 13%, 49%);
@@ -108,6 +108,32 @@ body {
 .main__card--info:last-of-type {
   border-bottom: 2px solid var(--clr-very-light-grayish-blue);
   margin-bottom: 2rem;
+}
+
+.main__card--more {
+  background: var(--clr-linear-gradient);
+  border-radius: 0.375rem;
+  color: white;
+  font-family: var(--ff-primary);
+  font-weight: 700;
+  letter-spacing: 1.39286px;
+  line-height: 1rem;
+  padding: 0.875rem;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.main__card--more:hover {
+  background: transparent;
+  border: 1px solid var(--clr-dark-purple);
+  color: var(--clr-dark-purple);
+  cursor: pointer;
+  padding: 0.8125rem;
+}
+
+.main__card--more:active {
+  transform: translateY(2px);
 }
 
 .main__card--recommended {
