@@ -102,7 +102,7 @@ body {
   border-top: 2px solid var(--clr-very-light-grayish-blue);
   color: var(--clr-grayish-blue);
   font-size: 0.9375rem;
-  padding: 0.75rem;
+  padding: 1rem;
   text-align: center;
 }
 
@@ -140,6 +140,52 @@ body {
 .main__card--recommended {
   margin-top: 2rem;
   margin-bottom: 2rem;
+  background: var(--clr-linear-gradient);
+}
+
+.main__card--recommended>.main__card--title {
+  color: white;
+}
+
+.main__card--recommended>.main__card--price {
+  color: white;
+}
+
+/* 
+ * Great example between the '>' and space ( ) CSS selector:
+ * A>B will only select B that are direct children to A 
+ * (that is, there are no other elements inbetween).
+ * A B will select any B that are inside A,
+ * even if there are other elements between them.
+ * In this case, using '>' won't work because 
+ * is between another element (.main__card--price paragraph).
+ * So we use space ( ) to select the element.
+ * Reference:
+ * https: //stackoverflow.com/questions/2636379/what-is-the-difference-between-and-a-space-in-css-selectors
+*/
+.main__card--recommended .main__card--price-cost {
+  color: white;
+}
+
+.main__card--recommended>.main__card--info {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  color: white;
+}
+
+.main__card--recommended>.main__card--info:last-of-type {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  color: white;
+}
+
+.main__card--recommended>.main__card--more {
+  background: white;
+  color: var(--clr-dark-purple);
+}
+
+.main__card--recommended>.main__card--more:hover {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
 }
 
 .footer {
