@@ -92,8 +92,22 @@ body {
 }
 
 .main__card--price-cost {
+  color: var(--clr-dark-grayish-blue);
   font-size: 4.5rem;
   line-height: 4.4375rem;
+}
+
+.main__card--info {
+  border-top: 2px solid var(--clr-very-light-grayish-blue);
+  color: var(--clr-grayish-blue);
+  font-size: 0.9375rem;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.main__card--info:last-of-type {
+  border-bottom: 2px solid var(--clr-very-light-grayish-blue);
+  margin-bottom: 2rem;
 }
 
 .main__card--recommended {
