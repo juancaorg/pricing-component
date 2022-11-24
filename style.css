@@ -93,6 +93,11 @@ body {
   left: 1.5em;
 }
 
+#main__toggle--switch:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
 .main__card {
   max-width: 327px;
   background-color: white;
