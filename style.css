@@ -236,3 +236,27 @@ body {
 .footer a:hover {
   color: var(--clr-brandeis-blue);
 }
+
+@media screen and (min-width: 1110px) {
+  .main__title {
+    margin-top: 0;
+  }
+
+  .main__cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .main__card {
+    max-width: 350px;
+    width: 350px;
+  }
+
+  .main__card--recommended {
+    min-height: 501px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 57px 31px;
+  }
+}
