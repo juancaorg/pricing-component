@@ -126,7 +126,7 @@ body {
 }
 
 .main__card--info {
-  border-top: 2px solid var(--clr-very-light-grayish-blue);
+  border-top: 1px solid var(--clr-light-grayish-blue);
   color: var(--clr-grayish-blue);
   font-size: 0.9375rem;
   padding: 1rem;
@@ -134,7 +134,7 @@ body {
 }
 
 .main__card--info:last-of-type {
-  border-bottom: 2px solid var(--clr-very-light-grayish-blue);
+  border-bottom: 1px solid var(--clr-light-grayish-blue);
   margin-bottom: 2rem;
 }
 
