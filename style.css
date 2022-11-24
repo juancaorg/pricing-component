@@ -12,20 +12,6 @@
   border: 0;
 }
 
-/* 
- * Input styling doesn't work
- * in Safari iOS by default, this should fix it.
- * Credit: https://stackoverflow.com/questions/1681826/css-safari-on-mac-doesnt-adhere-to-my-submit-button-style#17701452
- * This question was asked 13 years ago and Apple 🍎
- * hasn't fixed this yet, bruh 💀.
-*/
-
-input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
 :root {
   --clr-linear-gradient: linear-gradient(135deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   --clr-very-light-grayish-blue: hsl(240, 78%, 98%);
@@ -64,6 +50,47 @@ body {
   margin-bottom: 5rem;
   display: flex;
   flex-direction: row;
+}
+
+/* 
+ * Simple toggle switch design.
+ * Credit to Alvaro Montoro:
+ * https://alvaromontoro.com/blog/68017/creating-a-css-only-toggle-switch
+*/
+
+#main__toggle--switch {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  font-size: inherit;
+  width: 2em;
+  height: 1em;
+  box-sizing: content-box;
+  border: 1px solid;
+  border-radius: 1em;
+  vertical-align: text-bottom;
+  margin: auto;
+  color: inherit;
+}
+
+#main__toggle--switch::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  box-sizing: border-box;
+  width: 0.7em;
+  height: 0.7em;
+  margin: 0 0.15em;
+  border: 1px solid;
+  border-radius: 50%;
+  background: currentcolor;
+}
+
+#main__toggle--switch:checked::before {
+  left: 1em;
 }
 
 .main__card {
