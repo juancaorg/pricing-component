@@ -51,6 +51,7 @@ body {
   margin: 2.5rem auto 5rem;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 /* 
@@ -64,15 +65,14 @@ body {
   -moz-appearance: none;
   appearance: none;
   position: relative;
-  font-size: inherit;
-  width: 2em;
-  height: 1em;
-  box-sizing: content-box;
-  border: 1px solid;
+  width: 3.5em;
+  height: 2em;
+  background: var(--clr-linear-gradient);
   border-radius: 1em;
+  box-sizing: content-box;
+  font-size: inherit;
   vertical-align: text-bottom;
   margin: auto;
-  color: inherit;
 }
 
 #main__toggle--switch::before {
@@ -81,17 +81,16 @@ body {
   top: 50%;
   left: 0;
   transform: translate(0, -50%);
-  box-sizing: border-box;
-  width: 0.7em;
-  height: 0.7em;
-  margin: 0 0.15em;
-  border: 1px solid;
+  width: 1.5em;
+  height: 1.5em;
+  background-color: white;
   border-radius: 50%;
-  background: currentcolor;
+  box-sizing: border-box;
+  margin: 0 0.25em;
 }
 
 #main__toggle--switch:checked::before {
-  left: 1em;
+  left: 1.5em;
 }
 
 .main__card {
