@@ -41,6 +41,7 @@ body {
   color: var(--clr-grayish-blue);
   font-size: 2rem;
   line-height: 2.4375rem;
+  margin-top: 4rem;
   text-align: center;
 }
 
@@ -216,10 +217,11 @@ body {
 }
 
 .footer {
-  margin-bottom: 1rem;
   font-weight: 400;
   font-size: 0.875rem;
   color: var(--clr-dark-grayish-blue);
+  margin-top: 4rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
