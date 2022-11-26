@@ -25,7 +25,10 @@
 
 body {
   min-height: 100vh;
-  background: var(--clr-very-light-grayish-blue);
+  background-color: var(--clr-very-light-grayish-blue);
+  background-image: url(./images/bg-top.svg), url(./images/bg-bottom.svg);
+  background-position: top 0 right -12rem, bottom 0 left;
+  background-repeat: no-repeat, no-repeat;
   font-family: var(--ff-primary);
   font-weight: 700;
   color: var(--clr-dark-grayish-blue);
